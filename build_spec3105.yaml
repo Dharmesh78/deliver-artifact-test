@@ -26,7 +26,7 @@ steps:
       RENAMED_FILE_MD5=`md5sum ${OCI_WORKSPACE_DIR}/my-files/downloaded-file.txt`
       echo "MD5 of downloaded file with changed name: $RENAMED_FILE_MD5"
       echo "Last 10 lines of the downloaded (renamed) file:"
-      tail -n10 ${OCI_WORKSPACE_DIR}/my-files/downloaded-file.tx
+      tail -n10 ${OCI_WORKSPACE_DIR}/my-files/downloaded-file.txt
       cd src/main/java/org/example/
       javac HelloWorld.java
     onFailure:
